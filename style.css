@@ -1,0 +1,50 @@
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  font-family: sans-serif;
+}
+.flex-item:hover {
+  border-color:goldenrod ;
+  box-shadow: 0px 0px 13px greenyellow;
+}
+.flex-item:focus {
+  border-color:goldenrod ;
+  box-shadow: 0px 0px 13px greenyellow;
+}
+.flex-item {
+  flex-grow: 1;
+  margin: 20px;
+  max-width: 300px;
+  border: 2px solid #333;
+  background-color:rgb(62, 60, 60);
+  color: white;
+  padding: 10px;
+}
+
+.key-img {
+  width: 300px;
+}
+
+.body-color {
+  background-color: grey;
+}
+
+/* Color precio */
+p b {
+  color: rgba(45, 227, 25, 0.467);
+}
+
+
+form {
+  width: 100%;
+  text-align: center;
+}
+
+input[type="submit"] {
+  background-color: rgba(45, 227, 25, 0.467);
+  color: black;
+  border: 20px;
+  padding: 8px 10px;
+}
