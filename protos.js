@@ -22,11 +22,11 @@ function Animal(nombre, genero) {
     //ATRIBUTOS
     this.nombre = nombre;
     this.genero = genero;
-    //METODO
-    Animal.prototype.sonar = function () {
-        console.log("sonido génerico");
-    };
 }
+ //METODO
+Animal.prototype.sonar = function () {
+    console.log("sonido génerico");
+};
 
 //EL OBJETO ES UNA INSTANCIA DE LA FUNCIÓN CONSTRUCTORA
 const puki = new Animal("Puki", "macho");
