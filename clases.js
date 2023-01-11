@@ -19,18 +19,29 @@ class Animal {
 }
 
 class Perro extends Animal {
-    constructor(nombre, genero, tamano) {
+    constructor(nombre, genero, tamano, raza) {
         super(nombre, genero);
         this.tamano = tamano;
+        this.raza = null;
     }
 
     sonar() {
         console.log(`Ladra como un ${this.nombre}`);
     }
+    //AGREGANDO STATIC
+    static queEres() {
+        console.log("soy un animal fantastico");
+    }
+    get getRaza() {
+        return this.raza;
+    }
+    set setRaza(raza) {
+        this.raza = raza;
+    }
 }
 
 const mimi = new Animal("mimi", "hembra"),
-    goofy = new Perro("goofy", "macho","grande");
+    goofy = new Perro("goofy", "macho", "grande");
 
 console.log(mimi);
 mimi.saludar();
@@ -38,3 +49,4 @@ mimi.sonar();
 console.log(goofy);
 goofy.saludar();
 goofy.sonar();
+Perro.queEres();
