@@ -16,18 +16,20 @@ console.log(mapa);
 
 mapa.set(19, "diecinueve");
 mapa.set(false, "false");
-mapa.set([],{})
-mapa.set(true,{"pulgas":344})
-console.log(mapa)
+mapa.set([], {});
+mapa.set(true, { pulgas: 344 });
+console.log(mapa);
 
 const mapa2 = new Map([
-  ["nombre","Alan"],
-  ["edad",35],
-  ["Animal","Humano"],
-  ["enojado?","sì, bastante"]
-])
-const keysMapa2 = [...mapa2.keys()]
-const valMapa2 = [...mapa2.values()]
+    ["nombre", "Alan"],
+    ["edad", 35],
+    ["Animal", "Humano"],
+    ["enojado?", "sì, bastante"],
+]);
+const keysMapa2 = [...mapa2.keys()];
+const valMapa2 = [...mapa2.values()];
 
-console.log(keysMapa2)
-console.log(valMapa2)
+console.log(keysMapa2);
+console.log(valMapa2);
+
+//RECUERDA QUE SET SE PARECE A ARREGLOS Y MAPS A OBJETOS
