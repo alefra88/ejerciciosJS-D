@@ -1,31 +1,30 @@
 const saludar = (nombre) => console.log(`hola ${nombre}`);
 
-saludar("beto")
+saludar("beto");
 
+const sumar = (a, b) => a + b;
 
-const sumar = (a,b) => a + b;
-
-console.log(sumar(3,2))
-
+console.log(sumar(3, 2));
 
 const funcionDeVariasLineas = () => {
-  console.log("uno");
-  console.log("dos");
-  console.log("tres");
-}
+    console.log("uno");
+    console.log("dos");
+    console.log("tres");
+};
 
-funcionDeVariasLineas();
+funcionDeVariasLineas ();
 
+const numeros = [1, 2, 3, 4, 5];
 
-const numeros = [1,2,3,4,5]
-
-numeros.forEach((el,index) =>console.log(`${el} esta en la posición ${index}`));
+numeros.forEach((el, index) =>
+    console.log(`${el} esta en la posición ${index}`)
+);
 
 const perro = {
-  nombre: "Cookies",
-  ladrar(){
-    console.log(this)
-  }
-}
+    nombre: "Cookies",
+    ladrar() {
+        console.log(this);
+    },
+};
 
-perro.ladrar()
+perro.ladrar();
