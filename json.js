@@ -1,3 +1,4 @@
+import speechSynthesis from "speechSynthesis";
 const json = {
     nombre: "Alan",
     edad: 35,
@@ -23,9 +24,11 @@ const objInput = (obj) => (let = jsonizar(obj));
 const desJasonizar = (dato) => JSON.parse(dato);
 const objInput2 = (obj) => (let = desJasonizar(obj));
 
-let json2 = objInput(json)
+let json2 = objInput(json);
 
-console.log(json2)
+console.log(json2);
 
-let json3 = objInput2(json2)
-console.log(json3)
+let json3 = objInput2(json2);
+console.log(json3);
+
+
